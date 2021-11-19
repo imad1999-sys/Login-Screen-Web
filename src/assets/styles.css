@@ -1,0 +1,118 @@
+.login-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.imgBx::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg , #e91e62 , #03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+.imgBx .login-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.contentBx .formBx{
+    width: 50%;
+}
+.contentBx .formBx .title{
+    letter-spacing: 1px;
+    color: #1e272e;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #485460;
+    display: inline-block;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+.contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+.contentBx .formBx .inputBx .input-label{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #2f3542;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Baloo Chettan 2', cursive;
+    letter-spacing: 1px;
+}
+.contentBx .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #1e272e;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #1e272e;
+    background: transparent;
+    font-family: 'Baloo Chettan 2', cursive;
+    border-radius: 30px;
+}
+.contentBx .formBx .inputBx input[type="submit"]{
+    background: #575fcf;
+    color: #f1f2f6;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: 500;
+}
+.contentBx .formBx .inputBx input[type="submit"]:hover{
+    background: #3c40c6;
+}
+.contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color: #1e272e;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+@media (max-width: 768px) {
+    .imgBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .contentBx .formBx{
+        width: 100%;
+        padding: 50px;
+        background: rgba(255,255, 255, 0.9);
+        margin: 50px;
+    }
+}
